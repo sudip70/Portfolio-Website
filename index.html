@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta charset="utf-8">
+	<meta name="Description" content="personal page">
+	<meta name="Keywords" content="html,css,javascript">
+	<meta name="author" content="Sudip Shrestha">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		/* Internal css */
+		.slideshow{
+			align-content: center;
+			overflow: visible;
+			position: absolute;
+			top: 70%;
+			left: 42%;
+			background-color: transparent;
+			height: 300px;
+			width: 250px;
+		} /*internal css for slideshow class */
+		img{
+			width: 100%;
+			height: 200px;
+		}
+	</style>
+</head>
+	<body>
+		<header>
+		<!--Creating a wrapper-->
+			<div class="main">
+				<!-- creating division for logo -->
+				<div class="logo">
+					<img src="image/logo.png" alt="logo">
+				</div>
+				<!-- Creating navigation bar -->
+				<nav>
+					<!-- creatong unordered list in navigation bar-->
+					<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="page/cv.html">CV</a></li>
+					<li><a href="page/blog.html">Blog</a></li>
+					<li><a href="page/research.html">Research</a></li>
+					<li><a href="page/contactme.html">Contact Me</a></li>
+					</ul>
+				</nav>
+				<div class="title">
+					<h1 style="">Hi, I am Sudip Shrestha.<br>Student/Progammer</h1>
+				</div>
+				<!-- creating button-->
+				<div class="button">
+					<a href="page/cv.html" class="btn">learn more</a>
+				</div>
+				<!-- xraeting new division for image slider -->
+				<div class="slideshow">
+					<p style="font-size: 18px; color: white; text-align: center;"><u><b>Services</b></u></p>
+    					<div id="img">
+     						 <img src="image/html5.png">
+    					</div>
+  					</div>
+  					<!-- java script for the image slider -->
+  				<script>
+    				var images = ['image/html5.png', 'image/java.png', 'image/python.jpg', 'image/css.png', 'image/javaScript.png'];
+    				var x = 0;
+    				var imgs = document.getElementById('img');
+   					setInterval(slideshow, 1500);
+    				function slideshow() {
+
+      				if (x < images.length) {
+        				x = x + 1;
+     				} else {
+        				x = 1;
+     				}
+      				imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+   					}
+  				</script>
+  				<!-- End of java script -->	
+			</div>
+		</header>
+		<!-- Start of footer tag -->
+			<footer class="footer" style="margin-top: 900px;">
+				<p style="font-size: 16px; text-align: center;">
+					Copyright © 2020 Sudip Shrestha.
+				</p>
+			</footer>
+			<!-- End of footer tag -->
+	</body>
+</html>
