@@ -1,3 +1,10 @@
 # Portfolio-Website
-- Website using HTML, CSS and JavaScript.
-- This is a portfolio website with multiple webpages with details and informations.
+
+HTML CSS project for Portfolio website
+
+# OverView
+
+- Personal Details
+- Educational details
+- Other details of Portfolio Websites
+
